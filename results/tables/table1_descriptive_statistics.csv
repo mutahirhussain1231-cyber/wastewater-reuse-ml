@@ -1,0 +1,26 @@
+,variable,count,mean,std,min,median,max
+Q-E,Inflow to plant (m3/day),509.0,37226.57,6636.0,10050.0,35990.0,60081.0
+ZN-E,Zinc in inflow (mg/L),524.0,2.36,2.75,0.1,1.5,33.5
+PH-E,pH of inflow,527.0,7.81,0.25,6.9,7.8,8.7
+DBO-E,BOD of inflow (mg/L),504.0,188.71,62.06,31.0,182.5,438.0
+DQO-E,COD of inflow (mg/L),521.0,406.9,120.36,81.0,400.0,941.0
+SS-E,Suspended solids in inflow (mg/L),526.0,227.44,135.94,98.0,196.0,2008.0
+SSV-E,Volatile suspended solids in inflow (mg/L),516.0,61.39,12.42,13.2,64.3,85.0
+SED-E,Sediments in inflow (mL/L),502.0,4.59,2.74,0.4,4.5,36.0
+COND-E,Conductivity of inflow (uS/cm),527.0,1478.62,394.9,651.0,1406.0,3230.0
+PH-P,pH entering primary settler,527.0,7.83,0.23,7.3,7.8,8.5
+DBO-P,BOD entering primary settler (mg/L),487.0,206.21,74.82,32.0,197.0,517.0
+SS-P,Suspended solids entering primary settler (mg/L),527.0,253.95,147.46,104.0,220.0,1692.0
+SSV-P,Volatile suspended solids entering primary settler (mg/L),516.0,60.37,12.39,7.1,62.8,93.5
+SED-P,Sediments entering primary settler (mL/L),503.0,5.03,3.35,1.0,4.5,46.0
+COND-P,Conductivity entering primary settler (uS/cm),527.0,1496.03,402.59,646.0,1420.0,3170.0
+PH-D,pH entering secondary settler,527.0,7.81,0.2,7.1,7.8,8.4
+DBO-D,BOD entering secondary settler (mg/L),499.0,122.35,37.02,26.0,119.0,285.0
+DQO-D,COD entering secondary settler (mg/L),518.0,274.05,74.12,80.0,274.0,511.0
+SS-D,Suspended solids entering secondary settler (mg/L),525.0,94.22,23.99,49.0,90.0,244.0
+SSV-D,Volatile suspended solids entering secondary settler (mg/L),514.0,72.97,10.47,20.2,74.5,100.0
+SED-D,Sediments entering secondary settler (mL/L),502.0,0.42,0.38,0.0,0.3,3.5
+COND-D,Conductivity entering secondary settler (uS/cm),527.0,1490.57,399.99,85.0,1428.0,3690.0
+DBO-S,Effluent BOD (mg/L),504.0,19.99,17.59,3.0,18.0,320.0
+DQO-S,Effluent COD (mg/L),509.0,87.29,39.03,9.0,84.0,350.0
+SS-S,Effluent suspended solids (mg/L),522.0,22.24,16.34,6.0,19.0,238.0

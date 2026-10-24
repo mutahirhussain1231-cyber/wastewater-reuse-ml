@@ -1,0 +1,8 @@
+standard,parameter,limit_mg_L,observed_pass_rate_%,agreement_%
+Discharge to inland waters (Pakistan EQS),Effluent BOD,80,97.0,97.0
+Discharge to inland waters (Pakistan EQS),Effluent COD,150,94.1,94.1
+Discharge to inland waters (Pakistan EQS),Effluent TSS,200,100.0,100.0
+Irrigation of non-food / processed crops (US EPA 2012),Effluent BOD,30,93.1,93.1
+Irrigation of non-food / processed crops (US EPA 2012),Effluent TSS,30,91.3,94.2
+Irrigation of food crops eaten raw (US EPA 2012),Effluent BOD,10,10.9,89.1
+Irrigation of food crops eaten raw (US EPA 2012),Effluent TSS,5,0.0,100.0

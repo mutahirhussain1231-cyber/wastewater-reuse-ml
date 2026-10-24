@@ -1,0 +1,19 @@
+target,model,n_train_days,n_test_days,CV_R2_mean,CV_MAE_mean,CV_MAE_sd,CV_RMSE_mean,Test_R2,Test_MAE,Test_RMSE
+Effluent BOD,Baseline (median),403,101,-0.375,5.609,1.572,6.747,-0.012,7.465,15.776
+Effluent BOD,Last result,403,101,-0.464,5.4,1.222,7.116,0.297,6.634,13.142
+Effluent BOD,Ridge regression,403,101,-0.285,5.163,1.955,6.768,0.286,6.069,13.249
+Effluent BOD,Random forest,403,101,0.011,4.755,1.143,5.812,0.259,6.293,13.498
+Effluent BOD,XGBoost,403,101,0.036,4.571,1.001,5.753,0.108,6.439,14.805
+Effluent BOD,Ensemble (average),403,101,0.023,4.628,1.168,5.822,0.227,6.156,13.787
+Effluent COD,Baseline (median),407,102,-0.107,24.033,3.908,31.023,-0.0,29.098,44.973
+Effluent COD,Last result,407,102,-0.551,27.952,3.594,36.27,0.094,30.657,42.797
+Effluent COD,Ridge regression,407,102,0.009,23.099,9.448,29.977,0.255,23.018,38.819
+Effluent COD,Random forest,407,102,0.144,20.945,3.982,27.264,0.288,23.241,37.926
+Effluent COD,XGBoost,407,102,0.14,21.04,4.672,27.52,0.224,23.739,39.605
+Effluent COD,Ensemble (average),407,102,0.175,20.57,5.399,27.111,0.263,23.194,38.596
+Effluent TSS,Baseline (median),418,104,-0.232,7.487,2.508,9.704,-0.039,6.846,13.313
+Effluent TSS,Last result,418,104,-0.367,6.464,1.854,10.062,0.121,7.442,12.244
+Effluent TSS,Ridge regression,418,104,-0.14,6.747,3.253,9.644,0.318,6.064,10.788
+Effluent TSS,Random forest,418,104,-0.063,6.672,2.253,8.851,0.324,5.92,10.738
+Effluent TSS,XGBoost,418,104,-0.045,6.462,2.234,8.859,0.202,6.123,11.669
+Effluent TSS,Ensemble (average),418,104,-0.014,6.374,2.437,8.788,0.302,5.991,10.913

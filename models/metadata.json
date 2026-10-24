@@ -1,0 +1,252 @@
+{
+  "features": [
+    "Q-E",
+    "ZN-E",
+    "PH-E",
+    "DBO-E",
+    "DQO-E",
+    "SS-E",
+    "SSV-E",
+    "SED-E",
+    "COND-E",
+    "PH-P",
+    "DBO-P",
+    "SS-P",
+    "SSV-P",
+    "SED-P",
+    "COND-P",
+    "PH-D",
+    "DBO-D",
+    "DQO-D",
+    "SS-D",
+    "SSV-D",
+    "SED-D",
+    "COND-D",
+    "DBO-S_last",
+    "DBO-S_avg3",
+    "DQO-S_last",
+    "DQO-S_avg3",
+    "SS-S_last",
+    "SS-S_avg3"
+  ],
+  "targets": {
+    "DBO-S": {
+      "name": "Effluent BOD",
+      "best_model": "XGBoost",
+      "test_R2": 0.108,
+      "test_MAE": 6.44,
+      "test_RMSE": 14.81,
+      "cv_MAE": 4.57,
+      "n_days": 504,
+      "top_inputs": [
+        "DBO-S_avg3",
+        "DQO-D",
+        "DBO-S_last",
+        "DQO-S_avg3",
+        "DBO-D"
+      ]
+    },
+    "DQO-S": {
+      "name": "Effluent COD",
+      "best_model": "Ensemble (average)",
+      "test_R2": 0.263,
+      "test_MAE": 23.19,
+      "test_RMSE": 38.6,
+      "cv_MAE": 20.57,
+      "n_days": 509,
+      "top_inputs": [
+        "DQO-D",
+        "DQO-E",
+        "DQO-S_avg3",
+        "DBO-S_last",
+        "SS-S_last"
+      ]
+    },
+    "SS-S": {
+      "name": "Effluent TSS",
+      "best_model": "Ensemble (average)",
+      "test_R2": 0.302,
+      "test_MAE": 5.99,
+      "test_RMSE": 10.91,
+      "cv_MAE": 6.37,
+      "n_days": 522,
+      "top_inputs": [
+        "SS-S_last",
+        "SS-S_avg3",
+        "SSV-E",
+        "SED-P",
+        "SS-D"
+      ]
+    }
+  },
+  "feature_stats": {
+    "Q-E": {
+      "label": "Inflow to plant (m3/day)",
+      "median": 35990.0,
+      "min": 10050.0,
+      "max": 60081.0
+    },
+    "ZN-E": {
+      "label": "Zinc in inflow (mg/L)",
+      "median": 1.5,
+      "min": 0.1,
+      "max": 33.5
+    },
+    "PH-E": {
+      "label": "pH of inflow",
+      "median": 7.8,
+      "min": 6.9,
+      "max": 8.7
+    },
+    "DBO-E": {
+      "label": "BOD of inflow (mg/L)",
+      "median": 182.5,
+      "min": 31.0,
+      "max": 438.0
+    },
+    "DQO-E": {
+      "label": "COD of inflow (mg/L)",
+      "median": 400.0,
+      "min": 81.0,
+      "max": 941.0
+    },
+    "SS-E": {
+      "label": "Suspended solids in inflow (mg/L)",
+      "median": 196.0,
+      "min": 98.0,
+      "max": 2008.0
+    },
+    "SSV-E": {
+      "label": "Volatile suspended solids in inflow (mg/L)",
+      "median": 64.3,
+      "min": 13.2,
+      "max": 85.0
+    },
+    "SED-E": {
+      "label": "Sediments in inflow (mL/L)",
+      "median": 4.5,
+      "min": 0.4,
+      "max": 36.0
+    },
+    "COND-E": {
+      "label": "Conductivity of inflow (uS/cm)",
+      "median": 1406.0,
+      "min": 651.0,
+      "max": 3230.0
+    },
+    "PH-P": {
+      "label": "pH entering primary settler",
+      "median": 7.8,
+      "min": 7.3,
+      "max": 8.5
+    },
+    "DBO-P": {
+      "label": "BOD entering primary settler (mg/L)",
+      "median": 197.0,
+      "min": 32.0,
+      "max": 517.0
+    },
+    "SS-P": {
+      "label": "Suspended solids entering primary settler (mg/L)",
+      "median": 220.0,
+      "min": 104.0,
+      "max": 1692.0
+    },
+    "SSV-P": {
+      "label": "Volatile suspended solids entering primary settler (mg/L)",
+      "median": 62.8,
+      "min": 7.1,
+      "max": 93.5
+    },
+    "SED-P": {
+      "label": "Sediments entering primary settler (mL/L)",
+      "median": 4.5,
+      "min": 1.0,
+      "max": 46.0
+    },
+    "COND-P": {
+      "label": "Conductivity entering primary settler (uS/cm)",
+      "median": 1420.0,
+      "min": 646.0,
+      "max": 3170.0
+    },
+    "PH-D": {
+      "label": "pH entering secondary settler",
+      "median": 7.8,
+      "min": 7.1,
+      "max": 8.4
+    },
+    "DBO-D": {
+      "label": "BOD entering secondary settler (mg/L)",
+      "median": 119.0,
+      "min": 26.0,
+      "max": 285.0
+    },
+    "DQO-D": {
+      "label": "COD entering secondary settler (mg/L)",
+      "median": 274.0,
+      "min": 80.0,
+      "max": 511.0
+    },
+    "SS-D": {
+      "label": "Suspended solids entering secondary settler (mg/L)",
+      "median": 90.0,
+      "min": 49.0,
+      "max": 244.0
+    },
+    "SSV-D": {
+      "label": "Volatile suspended solids entering secondary settler (mg/L)",
+      "median": 74.5,
+      "min": 20.2,
+      "max": 100.0
+    },
+    "SED-D": {
+      "label": "Sediments entering secondary settler (mL/L)",
+      "median": 0.3,
+      "min": 0.0,
+      "max": 3.5
+    },
+    "COND-D": {
+      "label": "Conductivity entering secondary settler (uS/cm)",
+      "median": 1428.0,
+      "min": 85.0,
+      "max": 3690.0
+    },
+    "DBO-S_last": {
+      "label": "Effluent BOD, most recent result (mg/L)",
+      "median": 18.0,
+      "min": 3.0,
+      "max": 320.0
+    },
+    "DBO-S_avg3": {
+      "label": "Effluent BOD, average of last 3 results (mg/L)",
+      "median": 18.0,
+      "min": 7.0,
+      "max": 185.33333333333334
+    },
+    "DQO-S_last": {
+      "label": "Effluent COD, most recent result (mg/L)",
+      "median": 84.0,
+      "min": 9.0,
+      "max": 350.0
+    },
+    "DQO-S_avg3": {
+      "label": "Effluent COD, average of last 3 results (mg/L)",
+      "median": 84.5,
+      "min": 37.0,
+      "max": 276.0
+    },
+    "SS-S_last": {
+      "label": "Effluent TSS, most recent result (mg/L)",
+      "median": 19.0,
+      "min": 6.0,
+      "max": 238.0
+    },
+    "SS-S_avg3": {
+      "label": "Effluent TSS, average of last 3 results (mg/L)",
+      "median": 19.333333333333332,
+      "min": 9.666666666666666,
+      "max": 157.66666666666666
+    }
+  }
+}

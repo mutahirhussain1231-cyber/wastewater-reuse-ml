@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Raw survey answers stay private (only summary tables are published)
+survey/responses.csv
+results/tables/survey_scored_responses.csv
+
+# Editors / OS
+.vscode/
+.DS_Store
+Thumbs.db
